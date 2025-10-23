@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartas de Dotes - D&D 3.5</title>
+    <link rel="stylesheet" href="feats-styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎲 Dotes de D&D 3.5</h1>
+            <p class="subtitle">Colección completa de dotes para personajes</p>
+        </div>
+        
+        <div class="controls">
+            <div class="search-container">
+                <label>🔍 Buscar por nombre:</label>
+                <input type="text" id="searchInput" placeholder="Escribe el nombre del dote...">
+                <span class="search-results" id="searchResults"></span>
+            </div>
+            
+            <div class="filters-container">
+                <div class="filter-group">
+                    <label>Categoría:</label>
+                    <select id="categoryFilter">
+                        <option value="all">Todas las categorías</option>
+                        <option value="general">General</option>
+                        <option value="guerrero">Guerrero</option>
+                        <option value="metamágica">Metamágica</option>
+                        <option value="creación">Creación de Objetos</option>
+                        <option value="estilo">Estilo</option>
+                        <option value="táctica">Táctica</option>
+                        <option value="salvaje">Salvaje</option>
+                        <option value="fe">Fe</option>
+                        <option value="divina">Divina</option>
+                        <option value="vil">Vil</option>
+                        <option value="elevada">Elevada</option>
+                        <option value="especial">Especial</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label>Tipo:</label>
+                    <select id="typeFilter">
+                        <option value="all">Todos los tipos</option>
+                        <option value="combate">Combate</option>
+                        <option value="conjuros">Conjuros</option>
+                        <option value="habilidad">Habilidad</option>
+                        <option value="divino">Divino</option>
+                        <option value="supervivencia">Supervivencia</option>
+                        <option value="sobrenatural">Sobrenatural</option>
+                        <option value="creación">Creación</option>
+                        <option value="armadura">Armadura</option>
+                        <option value="movimiento">Movimiento</option>
+                        <option value="salvaciones">Salvaciones</option>
+                        <option value="social">Social</option>
+                    </select>
+                </div>
+                
+                <button class="clear-btn" id="clearFilters">Limpiar filtros</button>
+                <button class="print-btn" onclick="window.print()">Imprimir PDF</button>
+            </div>
+        </div>
+        
+        <div class="card-grid" id="cardGrid"></div>
+    </div>
+
+    <script src="feats-data.js"></script>
+    <script src="feats-app.js"></script>
+</body>
+</html>
